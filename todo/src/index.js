@@ -1,15 +1,21 @@
 import React from 'react';
 import './App.css'
 import ReactDOM from 'react-dom';
+import styled from 'styled-components';
 
 import ToDo from './components/ToDo';
 
+const StyledContainer = styled.div`
+  width: 960px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+`;
 
 function App() {
   return (
-    <div className="App">
+    <StyledContainer className="App">
      <ToDo />
-    </div>
+    </StyledContainer>
   );
 }
 

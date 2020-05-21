@@ -1,4 +1,23 @@
 import React from 'react';
+import styled from 'styled-components';
+
+
+const StyledCard = styled.div`
+  border: 3px #555 solid;
+  background-color: #fdfda9;
+  margin-bottom: 10px;
+`;
+
+const StyledTitle = styled.h3`
+  font-size: 30px;
+  font-family: "Barlow", sans-serif;
+`;
+
+const StyledComplete = styled.p`
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+`;
+
 
 const ToDoCard = (props) => {
     const { tasks } = props.tasks;
@@ -6,13 +25,15 @@ const ToDoCard = (props) => {
     return (
         <div>
             {tasks.map(todo=>{
-                return(
-                    <div>
-                       <h3>{todo.item}</h3>
-                       <p>Complete: {JSON.stringify(todo.completed)}</p>
-                       <button id ={todo.id} onClick={e => props.handleDone(e)}>COMPLETED</button>
-                    </div>
-                )
+                return (
+                    <StyledCard>
+                      <StyledTitle>{todo.item}</StyledTitle>
+                      <StyledComplete>Complete: {JSON.stringify(todo.completed)}</StyledComplete>
+                      <button id={todo.id} onClick={(e) => props.handleDone(e)}>
+                        COMPLETED
+                      </button>
+                    </StyledCard>
+                );
             })}
         </div>
     )
