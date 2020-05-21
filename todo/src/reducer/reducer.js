@@ -13,7 +13,7 @@ let initialState = {
         item: 'Work on budger for the month',
         completed: true,
         posted: moment().calendar(),
-        id: 2
+        id:  2
     }
    ]
 };
