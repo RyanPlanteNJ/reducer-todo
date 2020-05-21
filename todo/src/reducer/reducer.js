@@ -1,5 +1,4 @@
-import React from 'react';
-
+// import React from 'react';
 import moment from 'moment';
 
 let initialState = {
@@ -17,7 +16,7 @@ let initialState = {
         id: 2
     }
    ]
-}
+};
 
 function reducer(state, action) {
     switch(action.type) {

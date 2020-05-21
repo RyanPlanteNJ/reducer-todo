@@ -1,5 +1,4 @@
 import React from 'react';
-import moment from 'moment';
 
 const ToDoCard = (props) => {
     const { tasks } = props.tasks;
