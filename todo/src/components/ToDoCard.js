@@ -3,9 +3,13 @@ import styled from 'styled-components';
 
 
 const StyledCard = styled.div`
-  border: 3px #555 solid;
+  border-top: 3px #fdfda9 solid;
+  border-left: 3px #fdfda9 solid;
+  border-right: 3px #fcfc77 solid;
+  border-bottom: 3px #fcfc77 solid;
   background-color: #fdfda9;
   margin-bottom: 10px;
+  border-radius: 3px;
 `;
 
 const StyledTitle = styled.h3`
